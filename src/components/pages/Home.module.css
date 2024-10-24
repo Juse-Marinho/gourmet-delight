@@ -1,0 +1,168 @@
+.img{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.img h1{
+padding: 80px;
+position: absolute;
+font-size: 4rem;
+color: #800020;
+top: 320px;
+right: 60px;
+}
+
+.img h4{
+padding: 80px;
+position: absolute;
+font-size: 2rem;
+color: #800020;
+bottom: 00px;
+}
+
+.comidas h2{
+font-size: 2.5rem;
+font-weight: 600;
+margin: 50px;
+margin-top: 90px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.comidas h2::after{
+content: "";
+width: 480px;
+height: 5px;
+background-color: #B68F40;
+border-radius: 12px;
+}
+
+.comidas{
+margin: 50px;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+}
+
+.cardapio{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+.cardapio button{
+color:#B68F40;
+border-color: #B68F40;
+border-radius: 10px;
+margin: 20px 70px;
+padding: 20px 50px;
+cursor: pointer;
+font-size: larger;
+}
+
+.cardapio img{
+border-radius: 15px;
+}
+
+.comidas1{
+display: flex;
+flex-direction: column;
+}
+
+.comidas2{
+display: flex;
+flex-direction: column;
+width: 360px;
+height: 270px;
+}
+
+.comidas3{
+display: flex;
+flex-direction: column;
+width: 360px;
+height: 270px;
+}
+
+.depoimentos{
+padding-top: 90px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.depoimentos h2{
+display: flex;  
+justify-content: center;
+font-size: 2.5rem;
+font-weight: 600;
+color: white;
+position: absolute;
+right: 50%;
+left: 50%;
+}
+
+.criticas{
+display: flex;
+flex-direction: row;
+padding: 0px 40px;
+}
+
+.criticas div{
+background-color: #B8404C;
+padding: 60px;
+margin: 20px;
+border-radius: 13px;
+text-align: center;
+color:#FFF2F9;
+font-size: large;
+}
+
+.criticas p{
+background-color: #B8404C;
+margin: 5px;
+}
+
+.criticas h3{
+background-color: #B8404C;
+}
+
+.pa{
+text-align: center;
+display: block;
+margin: 3em 0;
+font-size: 2rem;
+padding: 30px;
+color: #800020;
+font-weight: 600;
+}
+
+.mapa{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 4em;
+background-image: linear-gradient(to right, #800020, #CF525F);
+}
+
+.mapa h2{
+color: #FFF2F9;
+font-size: 2.5rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.mapa h2::after{
+content: "";
+width: 480px;
+height: 5px;
+background-color: #B68F40;
+border-radius: 12px;
+}
+
+.mapa img{
+height: 300px;
+}
