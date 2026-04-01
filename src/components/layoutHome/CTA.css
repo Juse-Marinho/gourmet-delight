@@ -1,0 +1,28 @@
+.call{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 90px;
+    background-image: linear-gradient(to right, #800020, #cf525f);
+    align-items: center;
+}
+
+.call h2{
+    color: #fff2f9;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.call h2::after{
+    content: "";
+    width: 450px;
+    height: 5px;
+    background-color: #b68f40;
+    border-radius: 12px;
+}
+
+.call img{
+    height: 300px;
+    width: auto;
+}

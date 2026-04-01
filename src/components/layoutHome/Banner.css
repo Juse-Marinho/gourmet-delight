@@ -1,0 +1,26 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 99vw;
+}
+
+.bannerTxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px;
+    position: absolute;
+    align-items: center;
+    width: 99vw;
+}
+
+.bannerTxt h1{
+    color: #800020;
+    font-size: 4rem;
+}
+
+.bannerTxt h4{
+    color: #800020;
+    font-size: 2rem;
+}

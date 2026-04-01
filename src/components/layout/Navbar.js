@@ -1,34 +1,36 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
+import logo from '../../img/logo.png'
+import './Navbar.css'
 import Container from './Container'
 
-import styles from './Navbar.module.css'
-import logo from '../../img/logo_GD.png'
-
-function Navbar() {
+const Navbar = () => {
     return(
         <header>
             <Link to="/">
-                <img src={logo} alt="Gourmet Delight"/>
+                <img src={logo} alt=''/>
             </Link>
-            <nav className={styles.navbar}>
+
+            <nav className='navbar'>
                 <Container>
-                    <ul className={styles.list}>
-                        <li className={styles.item}>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li className={styles.item}>
-                            <Link to="/sobre">Sobre Nós</Link>
-                        </li>
-                        <li className={styles.item}>
-                            <Link to="/cardapio">Cardápio</Link>
-                        </li>
-                        <li className={styles.item}>
-                            <Link to="/contato">Contato</Link>
-                        </li>
-                    </ul>
+                <ul className='list'>
+                    
+                    <li className='item'>
+                        <Link to="/sobre">Sobre</Link>
+                    </li>
+
+                    <li className='item'>
+                        <Link to="/cardapio">Cardapio</Link>
+                    </li>
+                    
+                    <li className='item'>
+                        <Link to="/contato">Contato</Link>
+                    </li>    
+                    
+                </ul>
                 </Container>
             </nav>
+
         </header>
     )
 }

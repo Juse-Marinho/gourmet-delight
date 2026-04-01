@@ -1,39 +1,36 @@
-import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 import Home from './components/pages/Home'
 import Sobre from './components/pages/Sobre'
 import Cardapio from './components/pages/Cardapio'
 import Contato from './components/pages/Contato'
 
-import Container from './components/layout/Container'
+import Container from './components/layout/Container';
+import Footer from './components/layout/Footer';
 import Navbar from './components/layout/Navbar'
-import Footer2 from './components/layout/Footer2'
-import Footer from './components/layout/Footer'
 
 function App() {
   return (
-    <Router>
-        <Navbar/>
-        <Switch>
-        <Container customClass="min-height">
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route exact path="/sobre">
-            <Sobre/>
-          </Route>
-          <Route exact path="/cardapio">
-            <Cardapio/>
-          </Route>
-          <Route exact path="/contato">
-            <Contato/>
-          </Route>
-        </Container>
-      </Switch>
-      <Footer2/>
-      <Footer/>
-    </Router>
-  )
+    <div className="App">
+      <Router>
+      <Navbar />
+
+      <Container customClass="min-height">
+        <Routes>
+
+          <Route exact path='/' element={<Home />}/>
+          <Route exact path='/sobre' element={<Sobre />}/>
+          <Route exact path='/cardapio' element={<Cardapio />}/>
+          <Route exact path='/contato' element={<Contato />}/>
+
+        </Routes>
+      </Container>
+
+      <Footer />
+      </Router>
+    </div>
+    
+  );
 }
 
 export default App;
