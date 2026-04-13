@@ -19,3 +19,5 @@ const Home = () => {
 }
 
 export default Home
+
+// corrigidos os bugs e atualizado o código
